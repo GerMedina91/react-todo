@@ -1,0 +1,76 @@
+@import './assets/css/variables.scss';
+
+header {
+    background-color: $background;
+    padding-top: 1.5rem;
+}
+
+#title {
+    background-color: $background;
+    padding: 2rem 0 5rem 0;
+    position: relative;
+}
+
+#list {
+    padding: 2rem 0;
+}
+
+h2 {
+    span {
+        color: $primary;
+        font-size: 20px;
+        font-weight: 600; 
+    }
+}
+
+h1 {
+    span {
+        font-size: 32px;
+        font-weight: 700;
+        color: $accent;
+    }
+}
+
+img {
+    max-width: 70px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img-conteiner {
+    position: relative;
+}
+.img-conteiner::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $accent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    bottom: 0px;
+    right: 0px;
+    z-index: 999;
+}
+
+
+.custom-shape-divider-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(170% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #FFFFFF;
+}
