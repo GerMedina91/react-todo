@@ -1,12 +1,13 @@
 import React from "react";
 import './TodoList.scss';
 
-function TodoList(props){
+function TodoList({children}){
+
     return (
         <React.Fragment>
             <h2>To do</h2>
             <ul>
-                {props.children}
+                {children}
             </ul>
         </React.Fragment>
     );

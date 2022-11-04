@@ -1,4 +1,4 @@
-@import './assets/css/variables.scss';
+@import '../assets/css/variables.scss';
 
 header {
     background-color: $background;
@@ -73,4 +73,10 @@ img {
 
 .custom-shape-divider-bottom .shape-fill {
     fill: #FFFFFF;
+}
+
+.task-alert {
+    text-align: center;
+    font-size: 70px;
+    color: $accent;
 }
