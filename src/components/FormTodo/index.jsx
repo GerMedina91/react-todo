@@ -1,17 +1,11 @@
 import React from "react";
 import './FormTodo.scss';
-import { TodoContext } from "../../contexts/TodoContext";
-import { ModalContext } from "../UI/Modal/Modal.context";
 
-function FormTodo(){
+function FormTodo({
+    CreateNewTask,
+    setVisible
+}){
     const [textValue, setTextValue] = React.useState('');
-
-    const {
-        CreateNewTask,
-    } = React.useContext(TodoContext);
-
-    const { setVisible } = React.useContext(ModalContext);
-
 
     const closeForm = () => {
         setTextValue('');

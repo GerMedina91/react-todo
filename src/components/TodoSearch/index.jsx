@@ -2,17 +2,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import './TodoSearch.scss'
 import React from "react";
-import { TodoContext } from '../../contexts/TodoContext';
 
-function TodoSearch() {
+function TodoSearch({
+    searchvalue,
+    setSearchValue
+}) {
 
 
-    const {
-        searchvalue,
-        setSearchValue
-    } = React.useContext(TodoContext);
-
-    const TodoSearch = (event) => {
+    const todoSearch = (event) => {
         setSearchValue(event.target.value);
     };
 
@@ -23,7 +20,7 @@ function TodoSearch() {
                 <FontAwesomeIcon className="icon" icon={faSearch}/>
                 <input placeholder='Search'
                     value={searchvalue}
-                    onChange={TodoSearch}
+                    onChange={todoSearch}
                 />
             </div>
         </React.Fragment>

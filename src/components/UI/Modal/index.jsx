@@ -1,11 +1,9 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './Modal.scss';
-import { ModalContext } from './Modal.context';
 
-function Modal({ children }){
+function Modal({ children, visible }){
 
-    const { visible } = React.useContext(ModalContext)
     
     return ReactDOM.createPortal(
         <div className={'modal ' + (visible ? 'open' : '')}>
