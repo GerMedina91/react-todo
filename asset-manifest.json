@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-todo/static/css/main.cb0fb941.css",
-    "main.js": "/react-todo/static/js/main.922d40e8.js",
+    "main.js": "/react-todo/static/js/main.3ce2f370.js",
     "static/media/team-lupikenn-ger.jpg": "/react-todo/static/media/team-lupikenn-ger.14946962c1f7518e65bb.jpg",
     "index.html": "/react-todo/index.html",
     "static/media/loading.svg": "/react-todo/static/media/loading.3930ea47f047dcaea295037ce2ac4b23.svg",
     "main.cb0fb941.css.map": "/react-todo/static/css/main.cb0fb941.css.map",
-    "main.922d40e8.js.map": "/react-todo/static/js/main.922d40e8.js.map"
+    "main.3ce2f370.js.map": "/react-todo/static/js/main.3ce2f370.js.map"
   },
   "entrypoints": [
     "static/css/main.cb0fb941.css",
-    "static/js/main.922d40e8.js"
+    "static/js/main.3ce2f370.js"
   ]
 }
